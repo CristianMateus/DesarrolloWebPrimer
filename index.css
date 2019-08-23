@@ -191,7 +191,7 @@
   color: rgb(120, 132, 135);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1075px) {
   /* Query Primera Sección */
   .nav-container {
     background-color: black;
