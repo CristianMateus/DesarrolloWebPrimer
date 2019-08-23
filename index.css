@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins|Rubik&display=swap");
+
+.body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: "Rubik", sans-serif;
+}
+
+.first-section-container {
+  background-image: url("assets/background-banner.png");
+}
+
+.first-section {
+  background: rgba(51, 48, 163, 0.98);
+  height: 100%;
+  width: 100%;
+  padding-bottom: 4.5em;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-routes,
+.nav-logo {
+  padding: 1em;
+}
+
+.nav-logo {
+  margin-left: 5.5em;
+}
+
+.nav-link,
+.nav-link:active,
+.nav-link:hover {
+  color: white;
+}
+
+.article-container {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-top: 10em;
+  text-align: center;
+}
+
+.text-section {
+  width: 38em;
+  font-family: "Poppins", sans-serif;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.top-button {
+  color: #fff;
+  background: #635cdb;
+  display: inline-block;
+  padding: 3px 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.banner-title h1 {
+  font-weight: 700;
+  line-height: 50px;
+  font-size: 48px;
+}
+
+.banner-content {
+  margin: 20px 0px;
+  color: #eee;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.buttom-button {
+  background: #f5f4fa;
+  border: 0;
+  padding: 1em;
+  border-radius: 5em;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.85);
+  margin-top: 15px;
+  padding: 15px 45px;
+}
+
+.buttom-button:hover {
+  color: #fff;
+  background: #635cdb;
+}
+
+/* Segunda Sección */
+.ss-introduction {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  line-height: 40px;
+  padding: 3em 5em;
+  font-weight: 450;
+}
+
+.ss-info-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+.ss-image img {
+  width: 22em;
+}
+
+.ss-data-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  padding: 1em;
+}
+
+.ss-card {
+}
+
+.ss-card-number {
+  font-size: 28px;
+  color: rgb(99, 92, 219);
+}
+
+.ss-card-title {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 60px;
+}
+
+.ss-card-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: Rubik, sans-serif;
+  color: rgb(120, 132, 135);
+}
