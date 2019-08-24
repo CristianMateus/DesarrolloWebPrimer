@@ -217,9 +217,13 @@
 }
 
 .ts-subtitle {
+  margin-bottom: 25px;
+}
+
+.ts-subtitle h3 {
   font-size: 28px;
   line-height: 38px;
-  margin-bottom: 25px;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #232323;
 }
