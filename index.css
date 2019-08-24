@@ -31,13 +31,19 @@
 }
 
 .nav-logo {
-  margin-left: 13.5em;
+  width: calc(100% - 78%);
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav-link,
 .nav-link:active,
 .nav-link:hover {
   color: white;
+}
+
+.nav-button{
+  display: none;
 }
 
 .article-container {
@@ -139,6 +145,7 @@
   font-weight: 300;
   margin-top: 40px;
   font-family: Rubik, sans-serif;
+  flex-wrap: wrap;
 }
 
 .ss-contact-mssg p {
@@ -157,7 +164,7 @@
 
 .ss-data-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
   grid-gap: 2em;
 }
 
@@ -201,6 +208,7 @@
 
 .ts-left {
   width: 60%;
+  height: 100%
 }
 
 .ts-text {
@@ -237,11 +245,12 @@
 
 .ts-checks-container {
   margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .ts-check {
-  width: 45%;
-  float: left;
+  width: 100%;
   margin-bottom: 15px;
   margin-right: 15px;
   color: #888;
@@ -259,6 +268,7 @@
   width: 40%;
   background-image: url("assets/img2.jpg");
   background-size: cover;
+  background-position: center center;
 }
 
 /* Imagen */
@@ -266,18 +276,87 @@
   background-color: pink;
 }
 
-@media (max-width: 1075px) {
+@media (max-width: 992px) {
   /* Query Primera Sección */
   .nav-container {
     background-color: black;
+    background: #232323;
+  }
+
+  .nav-logo {
+    width: auto;
   }
 
   .nav {
     display: none !important;
   }
+
+  .nav-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-weight: 900;
+    height: 2em;
+    width: 2em;
+    margin-right: 1em;
+    cursor: pointer;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+
   /* Query Segunda Sección */
   /* Ocultar imágen */
   .ss-left {
     display: none;
   }
+
+  .ss-data-cards {
+    grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+  }
+
+  /* Query tercera sección */
+  .ts-checks-container {
+    grid-template-columns: 1fr !important
+  }
+}
+
+@media (max-width: 767px) {
+  /* Query tercera sección */
+  .ts-left {
+    width: 100%;
+  }
+
+  .ts-right {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Query primera sección */
+  .article-container{
+    padding-top: 3em;
+  }
+
+  .banner-title h1{
+    line-height: 37px;
+    font-size: 32px;
+  }
+
+  .banner-content{
+    font-size: 16px;
+  }
+
+  /* Query segunda sección */
+  .ss-intro-text{
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  /* Query tercera sección */
+  .ts-text{
+    padding: 1em;
+  }
+
 }
